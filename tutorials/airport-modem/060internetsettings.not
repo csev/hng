@@ -1,0 +1,9 @@
+This screen is where the configuration steps differ between the analog modem configuration and the  cable modem/DSL configuration.
+<p>
+First we indicate that the connection will be done using the <b>Modem</b>.  All the IP address information disappears and the phone number PPP ID and PPP password are displayed instead. 
+<p>
+As with most PPP setups you want to leave all the IP address router address and DNS address information blank and allow them to be supplied by the server.  In this example the Airport is connected so the values assigned by the server are shown. 
+
+
+
+

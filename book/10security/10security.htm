@@ -1,0 +1,188 @@
+<h3>Network Security for Your Home</h3>
+One of the most commonly asked questions once your home network is connected to the Internet is the level of security risk.  Many people have sensitive information such as their banking, stock portfolio, and other information stored on their computer and are concerned about being "hacked" by someone connecting in through the Internet.
+<p>
+Before we look into the issues and techniques to improve security in your home network we should first take a short look at "why" we should worry about security.  There are three basic types of security threats to worry about:
+<ul>
+<li>
+There is some person or organization who is trying to break in and steal something in particular from <i>you</i>.   They may want your Swiss bank account numbers or your business records or someone might have hired a private investigator to get your E-Mail records.  On the average, this is not a typical situation and your problems are out of the scope of this chapter.
+<li>
+There is some individual or group who breaks security as a hobby.  In their spare time, they look for unprotected systems, and (mostly for fun) they break into those systems.  Typically these people are not interested in the typical home computer system unless you have a web or file server connected via a high speed link.  If you have a large, unprotected server, these folks will quickly find your system and use your system to exchange vast amounts of (typically illegally obtained) material through your system.
+<li>
+There is an organized group who is breaking into systems as part of some planned preparation for an attack.   These individuals might even be related to a government effort.
+</ul>
+While this list seems very frightening at first, in reality, there is a very small chance that anyone really cares about attacking <i>you</i>.  If you are Microsoft, the US Whitehouse, or some other high profile site, then you need professional security staff who understand these issues in great detail.  But if you are the average Internet user then this chapter will cover most of the security issues pertinent to you.
+<p>
+For the hundreds of millions of normal people, we must be vigilant, but in general, we do not have to worry about protracted focused attacks on our networks.  In a sense, if you take normal precautions, the random hacker will simply move on to the next home network.  In home security, the first step is simply to make sure that your doors and windows are locked when you are not home.  A lazy burglar will simply move on looking for a house which has doors which are not locked.
+<p>
+The techniques that we will describe in this chapter include:
+<ul>
+<li>
+Virus and worm protection
+<li>
+Personal firewalls
+<li>
+Network firewalls
+</ul>
+Your security plan can be some combination of these techniques.  We also will look at the nature of security problems in an Internet environment.
+<p>
+
+<h3>Viruses and Worms</h3>
+
+A "virus" is any type of malicious software which attempts to replicate itself onto as many systems as possible.  A simple virus is propagated by user actions such as saving files or copying information to a floppy.  A "worm" is a type of virus that both infects a computer, and then tries to actively propagate itself by using the network. 
+<p>
+It is possible to get infected with a virus even if your computer is not connected to the Internet.  Your computer can be infected by inserting an infected floppy disk or CD-ROM, or by installing some infected software.  Once a computer is infected, the virus may be passed on through files, floppy disks or CD-ROM's that are written by that computer.
+<p>
+With the advent of the Internet and E-Mail attachment, the number of viruses has blossomed with well over 50,000 different viruses with many variants of each virus.
+<p>
+Just as an example, we can look at one particular worm-type virus called the <b>QAZ.worm</b>.  This virus affects the <b>notepad</b> application on Microsoft Windows systems.  It renames <b>notepad.exe</b> to <b>note.exe</b> and replaces <b>notepad.exe</b> with the virus.  The virus is automatically started when the system boots up and it continuously scans  your local area network for writable drives so that it can place the virus on those systems as well.  Also, while it is running, it sends a packet to the IP address 202.106.185.107 every few minutes.  While no one knows the exact purpose of the packet, it is believed that the virus may allow the creators of the virus to use it as a "back-door" to extract other information from your system or make alterations to your system.  Given the nature of this virus, it is good that it does not propogate very quickly.
+<p>
+Fortunately, there are excellent tools for virus protection from an number of software vendors.  The safest approach is to install a virus protection package on each of your computers.  While some firewall packages offer virus protection for incoming data, they do not protect from viruses which may be carried on disks or other media.  It is also very important to update your virus definitions from time to time as new viruses come out.
+<p>
+There are a number of basic steps that you can take to reduce you chances of getting a virus or worm:
+<ul>
+<li>
+Run virus checking software and update the virus tables every 30-60 days.
+<li>
+Simply delete E-Mail from folks that you do not know. Never open an attachment that you were not expecting, regardless of how interesting the subject line may be.  E-Mail attachment viruses change so often that even virus checking software has a hard time keeping up to date.
+<li>
+Only download and install software from known and trusted sources.  Software should be downloaded from the vendor site or one of the larger repository sites such as www.downloads.com.  
+</ul>
+While viruses and worms are an annoying aspect of exchanging information, because so many computers have virus checking software, most viruses are quickly eliminated and do not spread too far.  And if people could resist clicking on E-Mail attachments with silly titles there would be even fewer viruses to worry about.
+<p>
+The leading providers of virus detection software such as <b>www.mcafee.com</b> often have excellent on-line sites with extensive virus and worm information.
+
+<h3>Firewalls</h3>
+<img src=002firewall.gif align=right>
+In a home networking situation, there are two types of "firewall" technologies which are available for use.  The basic purpose of a firewall to look at all network traffic and make a decision as to whether or not the traffic should be accepted or ignored.  A normal gateway (or router) simply forwards data based on the address of the data without looking at the contents of the data.
+<p>
+Firewalls were first deployed in business situations where attaching the corporate network directly to the Internet would be a profound security risk.  The purpose of the firewall was to block all traffic except that traffic which the business felt was appropriate.  For example, many corporate firewalls block all incoming traffic (from the Internet) except E-Mail traffic to one computer on the corporate LAN.
+<p>
+Firewalls can also be used to block outgoing data as well.  Many companies did not want their employees having wide open access to the web from their desk.  The company would configure it so that only a certain group of employees were allowed to browse Internet sites beyond the corporate intranet. As we begin to connect homes to the Internet, we increasingly find that we need to adopt these security techniques used in the business sector.
+<br clear=all>
+<h3>Personal Firewalls</h3>
+For home use, a new technology has recently appeared called a <b>personal firewall</b>.  Instead of running on a gateway system, the personal firewall runs on each computer that is connected to the network.  A personal firewall can also be used if there is only one computer connected via dial-up modem.
+<p>
+<img src=040zoneie.gif align=right>
+A personal firewall operates somewhat differently than a typical corporate firewall.  Because there are very few services running which need to respond to incoming connections, a personal firewall usually shuts off all incoming access except for file and printer sharing.  Because it is running on your workstation, it looks very closely at outgoing connections as each application is executed.  The personal firewall will prompt to make sure that you are willing to allow this particular application to connect to the Internet.  Once you approve each application, the personal firewall will remember to allow that application to make connections without your approval from that point forward.
+<p>
+This way, you can detect when applications are making network connections for the first time.  This will allow you to catch Trojan horse viruses which make outgoing connections from your computer. You will also be notified when a software package is registering you via the network or if your screensaver is making network connections.  This ability to be notified and approve outgoing network connections is a unique aspect of a personal firewall.
+<br clear=all>
+<p>
+<img src=050zonedns.gif align=right>
+Personal firewalls will also notice when another computer is sending you data using an unexpected protocol.  Again, because this is a workstation and not a server, nearly all unsolicited network traffic can safely be ignored.
+<p>
+When you first install a personal firewall, you will find that it is very talkative, as it learns the applications which use the network.  But very quickly, the personal firewall has seen everything once and you are alerted to any new activity and given the chance to approve it.  After the first few weeks, do not be so quick to approve new activity unless you are using some new application such as a media player, online game, or chat program.
+<p>
+The examples in this section used a very popular personal firewall called <b>ZoneAlarm</b> which is available at no charge for personal use available from <b>www.zonelabs.com</b>.  There are a number of other popular personal firewall packages that you may want to choose from.
+<br clear=all>
+
+<h3>Network Terminology - What is a Port?</h3>
+
+Before you move into the detailed configuration of your home network with respect to security, there are a few more network terms which we need to cover so you can understand all of the configuration issues.
+<p>
+Earlier in the book, we learned that each computer has an IP address such as 192.168.1.10.  For each address, we can have any number of connections.  We glossed over the concept of <b>ports</b> at the time, but now as we begin to consider security, you will have to understand the notion of ports.   By controlling access to various ports, we can limit what intruders are capable of doing.  
+<p>
+The IP address, port, and connection values work together in a hierarchy as follows:
+<ul>
+<li>
+The IP address is used to identify all of the data destined for that particular computer. IP addresses are 32-bit numbers and are generally shown in "dotted" form such as 192.168.1.10.
+<li>
+Within the IP address, each packet of data is destined for a particular port.  The port is used to select which application the data is destined for.  A computer can be used for file transfer, web surfing, E-Mail, file sharing, media playing, and many other purposes.  Each of these uses is done on a separate port.  Port numbers are small integer numbers.  For example, E-Mail (smtp) is sent across port 25, while web traffic (http) is sent across port 80.  Many number of the ports below 512 are reserved for existing well known applications.
+<li>
+Within each port, there is a connection for the particular "instance" of an application.  If you both a Netscape and Internet Explorer browser open, they will both be using the http (Hypertext Transport Protocol) port but each browser will be using a different connection within the port.
+</ul>
+
+<h3>The Mail Application Protocol</h3>
+
+In addition to a port number, each application also has a "protocol" which operates on the ports.  Examples of protocols include <b>Simple Mail Transfer Protocol</b> (SMTP) which operates on port 25 and the <b>Hypertext Transport Protocol</b> (HTTP) which operates on port 80.  The protocol determines the "rules of the road" when communicating across a particular port.  You can find documents which describe many of the different application protocols at the web site for the <b>Internet Engineering Task Force</b> (www.ietf.org).  You are looking for documents called <b>Requests for Comments</b> (RFCs).  For example the mail transfer protocol is described in RFC-2821 (originally published as RFC-821).  
+<p>
+Here is an excerpt from RFC-821 to give you a sense of how this type of document reads:
+<pre>
+     The first step in the procedure is the MAIL command.  The
+     &lt;reverse-path> contains the source mailbox.
+
+      MAIL &lt;SP> FROM:&lt;reverse-path> &lt;CRLF>
+
+     This command tells the SMTP-receiver that a new mail
+     transaction is starting and to reset all its state tables and
+     buffers, including any recipients or mail data.  It gives the
+     reverse-path which can be used to report errors.  If accepted,
+     the receiver-SMTP returns a 250 OK reply.
+</pre>
+<p>
+<img src=010smtp.gif align=right>
+These protocols are intended to allow applications to communicate with one another so that data can be exchanged.  Having a standard for an application level protocol allows electronic mail software from thousands of different vendors to interoperate.  In network terms, the program which is initiating the connection is called the <b>client</b> and the program which is receiving the connection is called the <b>server</b>.
+<br clear=all>
+
+<h3>We "Hack" a Mail Server</h3>
+<p>
+<img src=020telnetsmtp.gif align=right>
+It is possible to replace the mail sending program (client) with a client program intent on causing damage or some other form of annoyance.  In this example, we can actually use the commonly available Windows <b>telnet</b> program to connect to port 25 and interact using the SMTP protocol.  When you open a connection to port 25 instead of the normal telnet application port, the interaction is quite different and completely governed by the SMTP protocol.
+<br clear=all>
+<p>
+<img src=030mailfrom.gif align=right>
+When the connection is first made, instead of seeing the standard login page which is typical of telnet, we are greeted by a "welcome to sendmail" message with some version information.
+Having read the standard for mail interaction (RFC-821), we realize the first step in sending a message is to send the <b>MAIL FROM</b> line.  We type in the message as described in the specification, and get the specified response (a 250 OK message) indicating that our command was in the proper format.  We could easily continue and enter all of the commands required by RFC-821 and cause an E-Mail to be sent.
+<p>
+Now at this point, you should be thinking that this is a good way to forge E-Mail.  Obviously, there is no check to see if the E-Mail address is truly valid.  We could have forged "president@whitehouse.gov" or "bill@microsoft.com" without any problem.  The bad news is that you would be exactly right in terms of how easily you can forge E-Mail.  But the good news is that this is the "oldest trick in the book" - so while this mail system was "trusting" the from address, it records a great deal of other information about the session to allow you to be tracked down quite easily if you use this approach to forge mail.
+<p>
+But given how easily addresses can be forged,  you should never completely trust the from address in an E-Mail message. You should <i>never</i> send an E-Mail reply to any message from "the system administrator" or "your bank" with any personal or sensitive information such as your password or account numbers.  That is another one of the oldest tricks in the book.
+<p>
+<h3>Errors in Application Protocols</h3>
+Not all security problems are misuses of the standard features in an application protocol.  Sometimes there are flaws in the implementation of the "receiver" program (also called the server).  A client program with malicious intent can take advantages of the flaws in the server programs to break security.  These flaws fall into two categories:
+<ul>
+<li>
+Actual bugs in the programs.  A programmer writing the server program forgot to check something in their code and some very specific sequence of interactions causes the program to grant some type of inappropriate access.
+<li>
+The programmer left a <b>back-door</b> into the program. A back-door is an undocumented feature which allows the original programmer or perhaps technical support staff to do some special action on the server.  Most typically, the original purpose of a back-door is testing rather than malicious intent.  However, there are many examples where back-door features were left in software even after it was distributed for production.
+</ul>
+Both bugs and back-door problems are generally fixed with new releases or patches from the original vendor of the software.  These security holes depend on the version of the software and the operating system.  This is a good reason to keep your operating system and software up-to-date.
+<p>
+The classic example of this type of security problem is the <b>Internet Worm</b>.   While the term "worm" is a generic term in security, there is one particular worm that is so significant that we call it "The Internet Worm".
+<p>
+The Internet Worm was developed by a graduate student in Computer Science at Cornell named Robert Morris Jr. in November of 1988.  While there are many conflicting accounts of how and why the worm was released, it ultimately infected many of the computers on the Internet and made them crash or run very slowly for about 3 days.  Even though what Robert Morris Jr. did was wrong, it made it very clear that security and vigilance was a necessary part of having a large shared network of computers.
+<p>
+The worm itself was very simple because it took advantage of several very well known flaws in the implementations of mail servers and several other applications.  The flaws had been known for many years, but back in 1988 those who were aware of the problems felt a sense of responsibility not to exploit those problems.  The Internet Worm simply demonstrated that we had to write safe and secure software and when there was a known problem, we had to fix it quickly and effectively.
+<p>
+There is an organization called the <b>Computer Emergency Response Team</b> (CERT) which was founded in 1988 which is charged by the government to monitor network and software security issues and insure that the integrity of the network is maintained.  Generally, CERT is viewed as the highest authority in security matters which affect the Internet .  You can visit the CERT web site at <b>www.cert.org</b>.
+<br clear=all>
+<p>
+<h3>Network Configuration</h3>
+
+There are a number of steps which can be taken to improve your network security which do not require the purchase of additional software.  The configurations which you can do depend on the operating system which you are using.  
+<p>
+The most common way to share files and printers between computers running Microsoft operating systems is NetBEUI (Netbios Extended User Interface).  this protocol is designed to work well in networks will a relatively small number of computers.  It is possible to send NetBEUI packets natively on your local area network as well as to send those packets encapsulated in the TCP/IP protocol.  NetBEUI packets cannot pass across the Internet but TCP/IP packets can cross the Internet.  On your local area network you can use either protocol.
+<p>
+<img src=060tcpproperties.gif align=right>
+One simple way to protect people on the Internet from trying to access your shared files and printers is to disable the connection between TCP/IP and NetBEUI.  This is done in Windows-98 under <b>Start | Settings | Control Panel | Network</b>.  Then make sure to remove any bindings between NetBEUI and your dialup adapter.  
+<br clear=all>
+<p>
+<img src=070nobindings.gif align=right>
+Then you will alter the settings on both of your TCP/IP components as well.  For both the dial-up and LAN TCP/IP, find the tab labeled <b>Bindings</b> and uncheck all of the file and printer sharing bindings.  You may get a pop-up box complaining about the lack of bindings but it can be ignored.  You must remove these bindings for all of the other computers on your local area network as well.  Once all of the computers have been rebooted, you can share files and printers across the LAN, but they will not be accessible from the Internet.  If you have problems browsing the network, you should recheck these values on all of the computers on the network.  As new cards are installed or there are major changes to the network components, these values may have been automatically reset.
+<br clear=all>
+<p>
+<img src=080ntconfig.gif align=right>
+Because Windows NT 4.0 Server is designed to operate directly connected as an Internet server, it has basic firewall capabilities built right into the operating system as a way to protect the system from intruders.  To access the configuration screen, from the NT 4.0 network control panel, you access <b>TCP/IP Properties | Advanced | Enable Security | Configure</b>.  From this screen, you can selectively permit or deny the various ports for the various protocols.  The configuration shown is a very "trusting" configuration for a server connected to a local area network.  For a web server, you might want to shut down all access except via port 80 TCP to allow the http (web server) protocol to be accepted.
+<br clear=all>
+
+<p>
+<h3>Gateway Firewalls</h3>
+<p>
+If you are running Network Address Translation (NAT) for you home network, then you already have a modicum of firewall protection.  Because NAT maintains a table of network connections created as each outbound connection is made, incoming data is generally not forwarded.  Some NAT gateways have the capability of routing a single incoming port to one computer.  This is typically used to route port 80 (http) to your home web server.  While this is not a true firewall, it provides a significant level of security.  If your NAT gateway is a hardware system, then it will probably not need any additional protection.  
+<p>
+<img src=090securenat.gif align=right>
+If you are running a software NAT gateway you may want to take some additional steps to secure that system.  One thing that you will learn is that sometimes the best security requires additional hardware.  One of the most important things to do to secure a software NAT gateway is to run it on a separate box.  Given that the network translation is not a significant performance load, you can typically use an older computer with no performance problems.  One key is to make sure that the gateway system is not running any file sharing software.  The configuration shown above has a stand alone NAT gateway which only has the minimal software installed on it, which allows port 80 (http) to be passed through to the home web server.  It would be nice to also run the web server on a separate system using a server-class operating system configured to ignore all IP traffic except for port 80.  It is also possible to run a personal firewall on the web server.  Because the web server is behind the gateway, you can use file and printer sharing between the web server and the other PC's in your home.
+<br clear=all>
+<p>
+
+<h3>TODO: Linksys Hardware Configuration Example</h3>
+<p>
+You can also purchase a dedicated firewall router unit which has firewall capabilities in addition to network address translation. As the gateway technology is improved (both hardware and software), one should expect to see vendors adding more firewall technology to their gateways, to the point where it will be hard to find a distinction between an gateway, firewall, and even virus protection.
+<br clear=all>
+
+<h3>Conclusion</h3>
+You can run your home network for many years without any real security incidents without taking any special precautions.  Users who want an increased level of security can install virus scanning software and a personal firewall at a very low cost.  Both of these tools are very simple to install and use and provide nearly all of the security necessary for most installations.
+<p>
+When you install a dedicated server with a permanent IP address, your security concerns are increased.  A dedicated server with free disk space and a high speed connection is a valuable asset to the "less principled" elements on the Internet.  By breaking into your server, they gain access to resources and can use your server to attack other computer systems while protecting their identity.
+<p>
+If you have a dedicated server, the simplest approach is to install a hardware gateway/firewall which can suppress all the network ports except for the approved ports.  You should run an operating system such as Windows NT Server, Windows 2000, Mac OS X, LinUX, or other flavor of UNIX on the dedicated server.  These operating systems have much better capabilities for protecting themselves while performing their functions.

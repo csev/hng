@@ -1,0 +1,3 @@
+This configures the network in which the wireless devices will operate.  Because this device is going to operate as the complete gateway for the home (both Ethernet and wireless), we will configure it to use Network Address Translation (NAT).
+<p>
+We also check the <b>provide IP addresses on Ethernet,/b> so the Airport will distribute DHCP addresses to the LAN attached computers.

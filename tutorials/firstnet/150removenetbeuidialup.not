@@ -1,0 +1,2 @@
+<!-- file:150removenetbeuidialup-->
+It has automatically added NetBEUI to our dialup adapter.  There is no reason to have this, so we remove it.

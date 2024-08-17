@@ -1,0 +1,56 @@
+<h3>FAQ For Setting Up Two Computers for Sharing</H3>
+<p>
+
+<p>
+<b>
+I think that the driver installation had a problem and would like-to redo it - how do I do this?
+</b>
+<p>
+Go to <b> Start | Settings | Control Panel | System | Device Manager </b> find your network controller, select it and press <b>Remove</b>.  Then either shutdown to power off and restart the system or use the <b> Add New Hardware </b> wizard.  Shutting down is probably he best plan.
+<p>
+
+<b>
+I cannot browse the network neightborhood - what happened?
+</b>
+<p>
+That is a good question.  First reboot both computers, log into both, and try again.
+Then go back through the tutorial checking every setting on both computers.  There are many reasons why this does not work, here is a partial list:
+<ul>
+<li>
+Hardware problems - 
+Make sure that the hardware has link lights on both network cards and the hub (this is a good reason to have a hub).  
+<li>
+Incorrect login - make sure that you are logged in using the "Client for Microsoft Networks" on both computers.  
+<li>
+When a computer has not indicated that it wants to give others access to its printers/files (the two check boxes) - it will not show up in a network neighborhood.
+<li>
+Network protocols not installed properly - feel free to remove protocols and re-add them from the network control panel.
+</ul>
+Often the problem is very small - before you start tearing things apart, just calmly go through all the settings and hardware connections.
+<p>
+<b>
+How do I get rid of the Client For Microsoft Networks Login?
+</b>
+<p>
+Before you installed networking, you may not have been prompted for a password.  
+Now that it is installed you get a prompt - if you press Escape, networking does not work.  The following procedure should do the trick:
+<pre>
+Log in with an account name and no password by pressing OK
+In Network Control panel switch to Windows Login
+Reboot the system
+At the windows login, enter the account with no password and press OK
+When the system comes up, reboot again
+The system should come up with out any prompt, but properly logged into the network.
+</pre>
+<p>
+If in this process things get messed up, go in and remove the *.pwl files from the C:\WINDOWS\ directory, set the login to "Client for Microsoft Networks" and start over.
+<p>
+If things seem to get confused, switch to "Client for Microsoft Networks" log-in and just press enter at the login prompt and leave it this way.
+<p>
+Another approach is to download TweakUI from Microsoft and configure the login the way you want.
+<p>
+<b>
+What are the PWL files?
+</b>
+<p>
+These files store the login acounts and passwords for this particular windows machine.  It is quite safe to remove them from the C:\Windows directory to start with a clean slate.

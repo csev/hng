@@ -1,0 +1,111 @@
+<h3>Phone Line and Power Line Networking</h3>
+If your home is already built, and you don't feel like climbing around in the attic, cutting holes in your walls, and fishing wires through walls, you may find it more practical to use the existing wiring in your home to build your home network.
+<p>
+You can do data networking over your existing phone lines or over the power lines in your home.  These protocols share the existing wiring in your home and coexist peacefully with 
+the current uses of your wiring.
+
+<h3>Using One Wire for Two Purposes</h3>
+Both of these protocols can share the physical wiring by adding a "modulated" signal on the existing wiring.  By modulating data at a relatively high frequency (Mhz) the data signals "pass right by" the normal signals on the wires.  Power signals operate at 60Hz and voice telephony operates from 0-6000Hz (the range of human hearing).  The data signals are at such a high frequency that they are not anywhere near a frequency that you would notice in the form of a hum or other form of interference.
+<p>
+<img src=005frequency.gif align=right>
+While this may seem daunting, it happens all of the time in Cable Television.  One cable with carries over 100 channels of information.  Each channel is modulated to use a different frequency range on the cable and so they do not interfere with one another.  Your television simply must tune to the right frequency to extract the desired signal.
+<p>
+Phone line and power-line wiring use the same approach.  When sending data, they modulate it up to a high frequency and send it across the cable.  The receiving network cards are tuned to the frequency so they get the signal.  At the same time, your telephone responds to a much lower frequency so the high-frequency data passes right by.  Similarly in power line networking, your hairdryer is "tuned" to 60Hz and so the high frequency data is completely ignored by the hair dryer.
+<p>
+Now of course, there are very significant technical details to make these protocols work reliably under a wide range of network conditions and wiring configurations.  It has taken many years of research into both technologies to arrive at well-engineered standards which work reliably.
+<p>
+Early on, there were a number of competing "standards" for this type of technology, forcing you to purchase all of your equipment from one vendor.  Thankfully in recent years, most of the vendors have chosen to conform to standards which makes the equipment from different vendors interoperable.  Standards are very critical to networking equipment because they protect your investment over time.  A standard means that if you purchase your network cards from one vendor and a home gateway from another vendor they will work together.
+<br clear=all>
+
+<h3>Installing Telephone Line Networking Technology</h3>
+<img src=010inthewalls.gif align=right>
+The physical topology for telephone wiring is to take single pair of wires and run to each wall outlet.  At some point, the wires are all connected together.  There is no "hub" for the wires, they are physically connected together on a terminal block or the wires are twisted together.  In some homes, the wires simply run from one plug to the next through the walls.  In other homes, the wires are all run back to a central location and connected.  The home wiring is also phycically connected to the wire which runs to the telephone company.
+<br clear=all>
+<p>
+<img src=015phonepairs.gif align=right>
+This approach makes it quite easy to add another phone extension or wire a new jack.  It is also why you can hear a conversation when you pick up any phone.  On the other hand, if you have two phone numbers for your home, they will be wired on separate pairs.  Most phone jacks are wired with at least four wires (two pairs) and are capable of supporting two phone numbers in one jack if wired properly.  Because phone line networking depends on the wires being phyiscally connected, all of your phone line network equipment should connect to "line 1" or "line 2".  Unless you do something special, you will be using "line 1" for your phone line networking.  If, for some strange reason, you have a reason to use two separate phone lines for phone line networking, you will need some sort of hardware or software gateway to make them appear as a single network.
+<br clear=all>
+<p>
+<img src=020phonenet.gif align=right>
+To use the phone line for data networking, you must install a network adapter which supports the phone-line protocols such as the <b>Intel AnyPoint Home Network  Card</b>.  These cards install in the exact same manner as an Ethernet card, but their connector is a telephone line connector. Some of the adapters will connect to your computer using a USB port and others will be built-in PCI cards.  You use a standard telephone cable to connect the adapter to the telephone outlet.  
+<br clear=all>
+<p>
+<img src=phonepassthrough.jpg align=right>
+If you want to use a phone and computer at the same location, you can use a simple phone-line jack doubler.  Some of the phone line network equipment provides a "loop through" telephone jack so you don't have to run a wire all the way back to the phone jack at the wall to connect the telephone, modem, or fax machine. 
+<p>
+You will install the proper device drivers for the network equipment  following the manufacturer instructions.  Once the computers are rebooted, you should have basic network connectivity between the computers with the ability to share files and printers.  At this point, there is absolutely no relationship between your phones and your computers.  It is like you have a basic two-station Ethernet network - except for the fact that you did not have to run any new wires.
+<br clear=all>
+<p>
+Sharing an Internet connection in a phone line networking environment is not really that different from sharing an Internet eonnection in a standard Ethernet environment, you have several options:
+<ul>
+<li>
+Have one computer act as the Internet gateway.  You install a phone line network card and either an Ethernet card or modem (depending on your Internet service). Then you can run a software network gateway such as Sygate (www.sygate.com), WinRoute (www.winroute.com), Windows Internet Connection Sharing (ICS), or other products.  The software will manage forwarding packets between your phone line network and the Internet.
+Some phone line connectivity kits will include connection sharing software and instructions for its setup.
+<li>
+You can purchase a bridge to connect your phone line network to your Ethernet network and connect any number of Internet connection sharing solutions (hardware or software) to the Ethernet portion of your network.
+</ul>
+<p>
+If you are sharing a connection using a modem, the connection may seem a bit strange at first.  You will actually have to make two connections to the phone jack.  One for the phone line networking and another for the modem.  
+
+<h3>Phone Line Networking Technology</h3>
+Phone line networking has become increasingly sphisticated over time.  Most vendors comply to a standard called the HomePNA (Home Phone Line Architecture - www.homepna.org) specification.  This specification is also an approved international recommendation G.989.1 (Phoneline Networking Transceivers - Foundation) .  There are HomePNA compliant products from a number of vendors, ranging from network cards, to print servers to home gateways.  There are two versions of HomePNA - Version 1.0 which runs at 1Mbps and Version 2.0 which runs at 10Mbps.  The Version 2.0 equipment is upwards compatible with the earlier equipment.
+<p>
+HomePNA choses a frequency that is high enough that it does not interfere with the frequencies used by Digital Subscriber Loop (DSL) Internet service.  It is possible for standard telephone service (POTS), DSL, and HomePNA to coexist on the same wiring without interference.
+<p>
+The HomePNA protocol essentially is an Ethernet-style protocol with adaptations to the physical, electrical, and modulation requirements necessary to operate on telephone lines.  There are several advantages to this approach.  First, many higher level network protocols, TCP/IP, Microsoft File and Print Sharing, and Novell Netware, all are highly adapted to operate well in an Ethernet environment.  Because of Ethernet's beginnings as a single wire ptorocol, Ethernet protocols are well adapted for the phone line wiring environment.   A second advantage to using the Ethernet protocol as the basis for HomePNA is that it is possible to develop a bridge which transparently converts from one physical media (phone line) to another physical media (10BaseT - or twisted pair Ethernet).
+<p>
+One of the flaws of early phone-line networking was that it was difficult to use a mix of standard Ethernet equipment and phone line networking equipment.  Now vendors have developed a relatively inexpensive bridge which has a HomePNA port and an Ethernet port on the back.  These bridge units tie the two networks together to make them appear as a single network.  With this bridge, you can use Ethernet (even 100Mb/sec Ethernet) in your "main computer room" and connect the rest of the house using phone line networking.  This way you can have the best of both worlds.
+<p>
+The advantages of phone line networking include:
+<ul>
+<li>
+Uses existing wiring in your home for data while allowing you to continue using the telephone
+<li>
+Cabling is very inexpensive and readily available
+</ul>
+<p>
+The disadvantages and limitations of phone line networking include:
+<ul>
+<li>
+The network adapters are more expensive - on the order of $100 as compared to an inexpensive Ethernet adapter for less than $10.  However as phone line networking catches on, and the manufacturing volumes go up, it is quite reasonable to expect that phone line networking adapters will drop in price.
+<li>
+You will have to purchase extra equipment to bridge between any standard Ethernet and your phone line networking equipment.
+<li>
+The total phone wire wire length in your home needs to be less than 1000 feet.  For most homes less than 10,000 square feet this is not a problem. 
+<li>
+The protocol can support up to 50 computers - again for most homes, this is not a problem. 
+</ul>
+It is important to note that the HomePNA protocol was designed to solve the problem of home networking and as such, may not work well in a small to medium sized business environment.
+<p>
+With the standardization of the phone-line network protocols, and the strong support from a wide range of vendors, phone line networking is a good bet for exsiting homes which you do not want to rewire.  But make sure that you look closely at what it will take to share your Internet connection or interoperate with an existing Ethernet network.
+
+<h3>Power Line Networking</h3>
+The adoption rate for power line networking is not as rapid as phone line networking.  While the basic idea of modulating the data at a high frequency is the same, power line networking faces several challenges:
+<ul>
+<li>
+The voltages and amperages present at a wall plug are much higher so the physical equipment to connect to the power lines must be more rugged than for telephone lines.
+<li>
+While the basic frequency of AC current is 50-60Hz, equipment such as flourescent light fixtures and microwave ovens cause a wide range of higher frequencies to be present in the power line, potentially causing interference with the data transmissions.
+</ul>
+While these are interesting challenges, they have been solved in the current generation of power line based network equipment.  Like phone line networking there is an industry association which is promoting a standardized approach to power line technology across multiple vendors.  You can get a good overview of the standards and products for power line networking at the HomePlug Powerline Alliance (www.homeplug.com) page.
+<p>
+The primary advantages of power line networking are:
+<ul>
+<li>
+There are a lot or power outlets in the typical home
+<li>
+Everywhere there is a data outlet, you have power (and vice vesa :) )
+<li>
+If you imagine some ultimate "future home" where data networking is simply assumed for every single gadget in the home, a single connector which includes both power and data is preferable to having to run two completely different types of wires to every location.
+<li>
+Some locations such as a warehouse or other commercial space may have very little phone or network wiring.
+</ul>
+So while power line has not made a great impact in the home network arena to date, it has some very attractive features and shows great potential.
+
+<h3>Conclusion</h3>
+
+Both phone line and power line networking have the benefit of allowing you to build a network with no "new wires".  The cost of the network adapters for these "more exotic" technologies will be somewhat higher than a "tried and true" Ethernet solution.  But the cost will be <i>far</i> lower than the cost of hiring a carpenter to cut holes in your walls for Ethernet.
+<p>
+Phone line networking is becoming a relatively mature market with the release of HomePNA 2.0 with the accompanying support from the hardware vendors.  By adding a HomePNA to Ethernet bridge, you can create a nicely integrated home network using both technologies where appropriate.
+<p>
+Power line networking has some definite advantages over phone line networking, but power line networking has had a much slower acceptance in the market place.  However, there may be some applications for which power line networking is the only practical solution.

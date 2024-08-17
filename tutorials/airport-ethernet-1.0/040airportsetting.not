@@ -1,0 +1,5 @@
+This screen sets the identity of your wireless base station.  The <b>Severance_Home</b> network name will be used to distinguish among different Airport wireless networks.
+
+In the TCP/IP configuration section, you are defining how the Airport will connect to the "non-wireless" network.  These settings should be as if the Airport was just another client on the "non-wireless" network.
+
+In another example we will see configurations other than "Manually" - other options include <b>DHCP</b> and <b>PPP</b>. 

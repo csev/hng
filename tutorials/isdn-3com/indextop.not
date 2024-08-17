@@ -1,0 +1,9 @@
+This section describes some of the basic configuration screens for 
+a popular ISDN modem/router - the 3Com OfficeConnect LanModem - also 
+known as the 3C892.  This is a reliable piece of equipment for
+connecting a small LAN to an ISDN ISP with a single account.
+<p>
+It does on-demand connections, but because ISDN connections are made in less
+than five seconds, most users will not notice that any dialing has 
+happened at all.  The only downside to an ISDN solution is typically the 
+cost of the ISDN phone line.

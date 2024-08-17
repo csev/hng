@@ -1,0 +1,3 @@
+http://www.hut.fi/~lahtima3/wlan.html
+http://sss-mag.com/pdf/802_11tut.pdf
+http://www.manta.ieee.org/groups/802/11/Tutorial/

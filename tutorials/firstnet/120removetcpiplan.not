@@ -1,0 +1,7 @@
+<!-- file:120removetcpiplan-->
+Because we are going to be operating in a home network environment and only do file and print sharing, we are going to remove the TCP/IP protocol bound to the Network adapter.
+
+In a more complex setup, we would leave this binding.  If we want it back, we can 
+always add it later.
+
+So we select it and press <b>Remove</b>.

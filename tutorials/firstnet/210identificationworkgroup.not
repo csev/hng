@@ -1,0 +1,4 @@
+<!-- file:210identificationworkgroup-->
+Back in the network properties, we select <b>Identification</b>.  We must select a network name for the computer, select the workgroup shared by all of the computers, and put in an optional description.
+
+Computer names must be unique within the workgroup.

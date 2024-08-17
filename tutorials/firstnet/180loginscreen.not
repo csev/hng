@@ -1,0 +1,9 @@
+When the computer reboots, you will be presented with a login screen.
+
+There are two different screens used for log-in.  A "Windows" login (smaller screen with a windows logo) and a "Network" login.   You need to see the network login.  If you don't, 
+go to the <b>Network Control Panel</b> and make <B>Client for Microsoft Networks</b> the default login.
+
+Also make sure to press <b>OK</b> or <b>Enter</b> at this screen - not <b>Escape</b>.  If you press <b>Escape</b>, you will not be logged in and file/print sharing will not work.
+
+If you feel brave and want to alter the log-in process, see the
+<a href=faq.htm>Frequently Asked Questions</a> for this tutorial.

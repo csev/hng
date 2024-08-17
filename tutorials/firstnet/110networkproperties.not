@@ -1,0 +1,9 @@
+<!-- file:110networkproperties-->
+Once the system is back up and we have logged in properly, we go to 
+<b> Start | Settings | Control Panel | Network</b> and see  this screen.
+
+A number of components have been installed.  We see our new adapter and the TCP/IP protocol.  The TCP/IP protocol has been "bound" to both the dial-up adapter and our new network card.
+
+This configuration would make the most sense in a business environment when this computer is connected to a LAN which is already connected to the Internet.
+
+You can explore these components by highlighting them and clicking <b>Properties</b> for each.

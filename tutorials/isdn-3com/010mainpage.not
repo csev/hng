@@ -1,0 +1,5 @@
+This is the main start page for the lanmodem (3com 3C892) home router.  To get to this screen you use the URL <a href=http://lanmodem/> lanmodem</a>. 
+<p>
+If has gone well the router has become your DNS server and it special cases this DNS name and forces you to visit it. 
+<p>
+If you are having problems making the first connection read the 3Com documentation carefully.  The best approach is to only connect a single computer to the LanModem configure that computer for DHCP (Dynamic IP) with no other settings (especially clear out any hard-coded DNS entries) bring up the LanModem and then bring up the PC - at this point the PC should get its DHCP from the LanModem and the above URL should work fine.  A common problem occurs when there is a hard coded DNS server on the PC 

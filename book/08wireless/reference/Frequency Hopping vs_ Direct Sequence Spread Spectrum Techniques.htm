@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0059)http://www.bazar-e.net/raylink/docs/doc_frecuencehoping.htm -->
+<HTML><HEAD><TITLE>Frequency Hopping vs. Direct Sequence Spread Spectrum Techniques</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.3314.2100" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff lang=EN-GB>
+<DIV class=Section1>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><FONT 
+face="Arial, Helvetica, sans-serif" size=2><B><I><SPAN lang=EN-US 
+style="FONT-FAMILY: Tahoma; FONT-SIZE: 16pt">Frequency Hopping vs. Direct 
+Sequence Spread Spectrum Techniques</SPAN></I></B></FONT></P>
+<P class=MsoBodyTextIndent><FONT face="Arial, Helvetica, sans-serif" 
+size=2>Spread spectrum technology was first introduced about 50 years ago by the 
+military as a way of sending secure communications. From the beginning it was 
+designed to be resistant to noise, interference, jamming, and unauthorized 
+detection. Spread spectrum transmitters send their signals out over a multiple 
+range of frequencies at very low power, in contrast to narrow band radios that 
+concentrate all of their power into a single frequency. There are several ways 
+to implement spread spectrum transmission, the techniques specified in the IEEE 
+802.11 Wireless LAN standard are frequency hopping spread spectrum (FHSS) and 
+direct sequence spread spectrum (DSSS).&nbsp; This white paper will discuss each 
+of these spread spectrum techniques and highlight the pros and cons of 
+each.</FONT></P>
+<P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>Some wireless local-area 
+network products, such as Raytheon's Raylink<SUP>TM</SUP> products, use the 
+frequency hopping method of spreading their signals. The range of available 
+frequencies in the ISM2 (Industrial Scientific Medical) band of 2.400 - 2.483 
+GHz is divided into a series of 1MHz channels up to 79 separate and distinct 
+channels. Transmissions are sent over each of these channels in what appears to 
+be a random sequence (called a “pseudo-random sequence”) such as channel 1, 
+channel 32, channel 3, channel 56, etc. The radio switches frequencies many 
+times a second, transmitting on each channel for a fixed amount of time, then 
+proceeding on to the next channel in its sequence, covering all of the channels 
+before repeating the sequence. Without knowing how long to stay on each channel 
+(the “dwell time”) and what the hopping pattern is, it is impossible for a 
+non-participating station to receive and decipher the data.</FONT></P><FONT 
+face="Arial, Helvetica, sans-serif" size=2><BR clear=all>The frequency hopping 
+physical layer has 22 hop patterns to chose from. The frequency hopping physical 
+layer is required to hop across the 2.4GHz ISM band covering 79 channels.&nbsp; 
+Each channel occupies 1Mhz of bandwidth and must hop at the minimum rate 
+specified by the regulatory bodies of the intended country.&nbsp; A minimum hop 
+rate of 2.5 hops per second is specified for the United States. </FONT>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>The DSSS physical layer uses 
+an 11-bit Barker Sequence to spread the data before it is transmitted. Each bit 
+transmitted is modulated by the 11-bit sequence. This process spreads the RF 
+energy across a wider bandwidth than would be required to </FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>transmit the raw data. The 
+processing gain of the system is defined as 10x the log of the ratio of 
+spreading rate (also know as the chip rate) to the data. The receiver despreads 
+the RF input to recover the original data. The advantage of this technique is 
+that it reduces the effect of narrowband sources of interference. This sequence 
+provides 10dB of processing gain that meets the minimum requirements for the 
+rules set forth by the FCC.&nbsp; The spreading architecture used in the direct 
+sequence physical layer is not to be confused with CDMA.&nbsp; All 802.11 
+compliant products utilize the same PN code and therefore do not have a set of 
+codes available as is required for CDMA operation.</FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2><B>Design and Cost 
+Issues</B></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>Current 2 Mbps DSSS products 
+on the market occupy 22 MHz of bandwidth at the first nulls of the main signal 
+lobe. On the other hand, FHSS operates within 1 MHz of bandwidth as a 
+consequence of a FCC mandate. As a result, the circuit design for the DSSS 
+products requires very good passband characteristics for the 22 MHz width. Given 
+a choice of 1 MHz versus 22 MHz, a 1Mhz design is easier to design.</FONT></P>
+<P class=MsoNormal 
+style="LINE-HEIGHT: 150%; TEXT-ALIGN: justify; TEXT-INDENT: 36pt"><FONT 
+face="Arial, Helvetica, sans-serif" size=2><I><SPAN>&nbsp;</SPAN>DSSS is 
+typically chipped using BPSK modulation. Since BPSK modulation has both phase 
+and amplitude information, linear amplification is necessary. That means only 
+Class A or Class AB amplifiers can be used. These are relatively low efficiency 
+amplifiers. A lot of the DC power is turned into thermal energy, which has to 
+dissipate. FHSS typically uses GFSK modulation. This is constant-envelope 
+modulation, so a non-linear, high efficiency Class C amplifier is adequate for 
+its use. These characteristics mean that DSSS is more power hungry and harder to 
+build in a smaller enclosure than FHSS systems. </I></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>In an indoor radio 
+propagation environment, the measured delay spread statistics have shown that a 
+100 nSec delay is fairly common. Since this is close to the </FONT></P>
+<P class=MsoBodyText2><FONT face="Arial, Helvetica, sans-serif" size=2><SPAN 
+lang=EN-US>DSSS chipping rate, there is a potential for inter-chip interference 
+- or in other words, a penalty for performance that may be as much as 10 dB over 
+corresponding Gaussian Channel. Good diversity antennas must be used to overcome 
+some of these problems. FHSS would not see the effects of the 100-nSec delay. 
+For a strong narrow-band jammer environment, FHSS also has a marked advantage if 
+it can avoid the jammed channel by its frequency hopping nature. If it can not 
+avoid narrow band interference, FHSS systems will still degrade its performance 
+gracefully. On the other hand, DSSS systems will immediately loose a connection 
+with narrow band interference. </SPAN></FONT></P>
+<P class=MsoBodyTextIndent style="TEXT-ALIGN: justify"><FONT 
+face="Arial, Helvetica, sans-serif" size=2>The FCC rule limits the 20-dB 
+bandwidth of a hopping channel to be 1 MHz wide. To achieve a comparable DSSS 
+data speed, FHSS must use M'ary modulation. The implementation difficulty is 
+exponential. Furthermore, since the required signal to noise ratio (Eb/No) 
+increases greatly for the same bit error rate (BER), the range is reduced. To 
+compound the problem, FHSS has to give up inter-hop synthesizer settling time 
+and demodulator lock-up time where no data transmission can be done. FHSS is 
+also forced to hop within 400 msec. It has to use no less than 75 channels. This 
+means that it is very difficult to get a FHSS system to do 2Mbps and there will 
+be some extra overhead that will affect data throughput.&nbsp; On the other 
+hand, DSSS can do high data rates relatively easily because it uses a larger 
+amount of the bandwidth to pass the data (i.e. it uses a fatter pipe to move the 
+data). </FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2><B>Network 
+Scalability:</B></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2><I>DSSS systems only allow 3 
+channels within the 2.4Ghz ISM band.&nbsp; Therefore, there can only be 3 
+separate networks within the same area without interfering with each 
+other.</I></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2><I>FHSS systems have 79 
+channels with the 2.4Ghz ISM band.&nbsp; Because of the hopping sequences, many 
+co-located networks can be deployed in the same area without interference and 
+without the co-located networks intercepting the data.&nbsp; This allows for the 
+network to be scaled based on an influx of users in a given area.&nbsp; FHSS 
+systems are ideal for high user density areas such as a corporate office 
+environment. </I></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" 
+size=2><B><I>Conclusions:</I></B></FONT></P>
+<P><FONT face="Arial, Helvetica, sans-serif" size=2>&gt;In conclusion, frequency 
+hopping spread spectrum and direct sequence spread spectrum techniques are used 
+in IEEE 802.11 wireless LAN systems because they are designed to be resistant to 
+noise, interference, jamming, and unauthorized detection. Direct Sequence Spread 
+Spectrum systems are much harder to build, has high user density limitations and 
+typically costs more to build. It should always have a slight data speed 
+advantages over frequency hopping systems and will have a range advantage. These 
+systems are ideal for data warehouse applications where the data user density is 
+small and range is a critical need.</FONT></P>
+<P class=MsoBodyTextIndent2><FONT face="Arial, Helvetica, sans-serif" 
+size=2>Frequency Hopping Spread Spectrum systems may have data speed limitations 
+and be shorter in range. FHSS designs are easier to build and therefore cost 
+less. They are very good at avoiding narrow band interference and unauthorized 
+user access due to their frequency hopping nature.&nbsp; They are also scalable 
+in that many separate networks can be co-located in the same area without 
+interfering with each other.&nbsp; Frequency hopping spread spectrum systems are 
+good for high user density areas such as corporate offices, education and 
+healthcare applications.&nbsp; </FONT></P></DIV></BODY></HTML>

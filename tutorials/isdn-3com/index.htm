@@ -1,0 +1,128 @@
+This section describes some of the basic configuration screens for
+a popular ISDN modem/router - the 3Com OfficeConnect LanModem - also
+known as the 3C892.  This is a reliable piece of equipment for
+connecting a small LAN to an ISDN ISP with a single account.
+<p>
+It does on-demand connections, but because ISDN connections are made in less
+than five seconds, most users will not notice that any dialing has
+happened at all.  The only downside to an ISDN solution is typically the
+cost of the ISDN phone line.
+<BR CLEAR=ALL><HR>
+<A NAME=010mainpage> </a>
+<A HREF=010mainpage.htm>
+<IMG SRC=010mainpage.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This is the main start page for the lanmodem (3com 3C892) home router.  To get to this screen you use the URL <a href=http://lanmodem/> lanmodem</a>.
+<p>
+If has gone well the router has become your DNS server and it special cases this DNS name and forces you to visit it.
+<p>
+If you are having problems making the first connection read the 3Com documentation carefully.  The best approach is to only connect a single computer to the LanModem configure that computer for DHCP (Dynamic IP) with no other settings (especially clear out any hard-coded DNS entries) bring up the LanModem and then bring up the PC - at this point the PC should get its DHCP from the LanModem and the above URL should work fine.  A common problem occurs when there is a hard coded DNS server on the PC
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020isdnparam1> </a>
+<A HREF=020isdnparam1.htm>
+<IMG SRC=020isdnparam1.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+The <b>ISDN</b> Parameters are pretty basic.  If you know the telephone number and SPID for each of the (two) lines the other information can usually be determined automatically using the SPID wizard.
+<p>
+The SPID information should come from your telephone provider as part of the installation process.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030isdnparam2> </a>
+<A HREF=030isdnparam2.htm>
+<IMG SRC=030isdnparam2.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This screen appears under the <b>Call Routing</b> section on the main page.
+<p>
+Part of the ISDN protocol is to allow you to configure various options and features on your lines.   Because the ISDN unit is almost "inside" the phone company it actually implements these features in the modem.
+<p>
+How you set these parameters will depend on how you will be using the two POTS lines.  If you are not planning to use the POTS lines then these settings are irrelevant.
+<P>
+<P>
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040dataparam> </a>
+<A HREF=040dataparam.htm>
+<IMG SRC=040dataparam.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+<b>Data Call Parameters</b> control how the modem uses the ISDN connection during data calls.
+<P>
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050lanparms> </a>
+<A HREF=050lanparms.htm>
+<IMG SRC=050lanparms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+<p>LAN parameters</b> control how the modem will operate out the Ethernet port.  The modem is designed to be the gateway router for the local area network.  You will notice that the cofiguration is exactly the same as a client except that the <b>gateway</b> field is missing - that is because this box <i>is</i> the gateway.
+<p>
+On the Ethernet you will configure this as a static address.  This address will be both the gateway address and the DNS address for all of the computers on the network.
+<p>
+If you enable DHCP then the modem will server DHCP address to allow all computers to configure TCP/IP automatically.  If you use DHCP the LanModem will automatically supply the client stations with the proper gateway and DNS server.
+<P>
+<P>
+<P>
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060currentcall> </a>
+<A HREF=060currentcall.htm>
+<IMG SRC=060currentcall.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+The <b>Current Call Status</b> from the main page is primarily used as a diagnostic tool.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070workstations> </a>
+<A HREF=070workstations.htm>
+<IMG SRC=070workstations.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+Under the <b>Workstations</b> selection, you can get various data about the computer systems that the router has interacted with on the local area network.
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080workstaparms> </a>
+<A HREF=080workstaparms.htm>
+<IMG SRC=080workstaparms.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This is an example of various configuration options you can set for a workstation.  Typically there is not much reason to make any changes on this screen.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090sysstats> </a>
+<A HREF=090sysstats.htm>
+<IMG SRC=090sysstats.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This shows the overall <b>System Information</b>.
+<BR CLEAR=ALL>
+<!-- Copyright 2000, Computer Resource Services -->

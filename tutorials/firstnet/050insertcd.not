@@ -1,0 +1,4 @@
+<!-- file:050insertcd-->
+In addition to the drivers for the card, Windows-98 notices that this is the first network card installed on the system and must install certain networking components to support the card.  This includes the TCP/IP software.
+
+So you must insert the Windows-98 CD and press <b>OK</b>.

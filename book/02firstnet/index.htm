@@ -1,0 +1,160 @@
+<h3>Getting Started in Home Networking</h3>
+<p>
+Most typically, people build their home computer network when they add the second computer to the household.   These days, when we buy a new computer for faster performance or more capabilities, often the existing computer is not totally obsolete.  Connecting these computers together with a simple home network is an inexpensive and easy step which allows you to move information between the systems, share an internet connection, and share peripherals such as a printer.
+<p>
+While building a home network may seem a daunting task best left to professionals, in actuality, it is fun and most people who do it feel that it is easier than installing a new hard disk in a computer.  In this chapter, we will cover the basic steps necessary to network two computers and move information between them.
+<p>
+Purchasing Hardware
+<p>
+You will have to purchase some equipment to build your network and connect the computers to the network.  The basic inventory that you will need is as follows:
+<p>
+<img src=010networkkit.jpg align=right width=300 alt="Two cards, two cables, and a hub">
+<p>
+<ul>
+<li>Two Network Cards ($20 each)
+<li>Two Network Cat-5 Cables (Depending on distance, from $10 - $50)
+<li>A Network Hub or Switch ($30-$50)
+</ul>
+<br clear=all>
+<p>
+You have several decisions to make.  First, you must decide whether you will build a 10Mb/second or 100Mb/second network.  With the 10Mb/second network, transferring a whole ZIP disk would take about 2 minutes.  With the 100Mb/sec network, it would take about 45seconds.  For most operations both are so fast you will hardly notice the difference.  But the cost of the faster network is generally not much worse than the 10Mb/sec network so you should buy 100Mb/sec cards (often labeled 10/100 cards because they can connect to either type of network). 
+<p>
+<img src=020cardtypes.jpg align=right width=300 alt="Built-in, PCMCIA PCI Card and ISA">
+<p>
+If you have a computer with a built-in Ethernet, you do not have to buy a card for those computers.  Many newer desktop and portable computers come with a built-in Ethernet port.
+<p>
+Network cards come in a wide price range from $9.00 to well over $100.00 per card.  Generally for home use, there is very little to be gained by spending more per card.  High performance servers in business networks can benefit from faster cards.  Network cards also have several different connectors on the back.  Some cards have more than one connector.  For your home network, you should choose a card that supports "twisted pair" or a Category 5 connection.  It is OK to have more than one connection on the card as long as it also has a twisted pair connection.  But in general, if you have a choice a card which only has a twisted pair connector will be the simplest.
+<p>
+Another important aspect of the card is how the card plugs into the computer system.  For portable computers, a PCMCIA card is necessary these range in price from $50.00 to $200.00.  For desktop computers, you will have a choice between the older ISA connection and the PCI connection.  Unless you are low on PCI slots, choose a PCI card.  PCI cards are faster and (more importantly) easier to configure.  So in summary, the ideal card for a desktop is a 10/100 twisted-pair PCI Ethernet card. 
+<p>
+It is possible to purchase USB Ethernet connection.  These are less commonly used, but will work well if installed according to the manufacturer directions.  USB may be useful if you have no remaining slots in your system but still have an available USB connection.
+<p>
+Network cables can be surprisingly expensive, but it is important to purchase good manufactured cables for your first network.  Later, you can try your hand at building your own cables.  The cables come in a wide range of lengths but in general always get longer cables than you think you need.
+<p>
+Now that we have network cards and cables, we need something to connect the systems together.  If you have exactly two systems you can use a simple plastic connector to connect the two cables together.  This can cost as little as a few dollars.  But once you have more than two computers, this solution will not work.  So in general we recommend that you purchase some type of hub or switch with four, eight, or more connections.  The hubs are quite inexpensive and have nifty little lights that show you if there is activity and whether or not a system is connected properly and powered up.  These lights come in handy when trying to diagnose a home network problem. 
+<p>
+If you are trying to spend the minimum amount of money, you can purchase a four-port hub.  However, if you are willing to spend a little more, you can invest in a 10/100 switch.  The primary advantage of a switch over a hub is the ability to mix 10Mb/second equipment with 100Mb/second equipment.  While all of the cards you purchase are 100Mb/sec, someone might come over to the house with their portable computer with a 10Mb/second port.  A switch automatically detects the speed of each port and communicates with that computer at the proper speed.  Data from 100Mb/second computers is properly transmitted to the slower computers and vice-versa.  So, a switch offers maximum flexibility and easy of use at a cost of $100 or slightly higher.
+<p>
+As you shop around, you may encounter a networking kit with two network cards, two network cables, and a small hub.   Generally these kits can be a good value but make sure to look closely at the components which make up the kit to insure that you are getting the components you like.   Often a $50.00 kit will represent a $15.00 savings over the components purchased separately.  As long as you are getting the components you want, kits can be a good value.  The kits may also include good step by step documentation which can be helpful.
+<p>
+[Macintosh]
+<p>
+All of this discussion assumes WinTel based computers.  All Macintoshes manufactured since about 1997 already have built-in Ethernet connectors.  Make sure to check to see if the built-in Ethernet is 10Mb/second or 10/100Mb/second.  If you are going to mix 10Mb/second and 100Mb/second equipment, then you will need a switch at the core of your network, or run all of the equipment at 10Mb/sec.  Ethernet adapters can be purchased for both desktop and portable Macintoshes that do not have built-in Ethernet.
+<p>
+Installing the Network Cards
+<p>
+Each network card will have its own directions.  Make sure to read and follow the directions provided with the card.  This section will cover the general steps which you will follow when installing a network card.
+<p>
+<br clear=all>
+<img src=050installingcard.jpg width=300 align=right alt="Installing a card">
+<p>
+First you open the computer case and find an open slot of the proper type for the card.  Remove the back plate for the slot and install the card.  Make sure the card is properly seated in the slot - an improperly seated card can cause the system to hang even before it starts to boot.
+<p>
+Power on the computer - keep an eye on the messages scrolling across the screen as the system first comes up.  Often (especially for PCI cards) you will see a message that the BIOS has detected the PCI card and has assigned resources to the card.  In Windows-95, 98, and 2000 as the operating system boots up, it scans for new hardware.  When new hardware is detected, Windows searches for the proper driver for the hardware.  Generally the network card comes with a floppy disk with the proper drivers - this disk is inserted and Windows installs the device drivers from the disk.
+<p>
+<br clear=all>
+<img src=060foundnewhardware.gif align=right alt="Windows has found new hardware">
+<p>
+In some cases, the card is a clone of a very popular network card such as an NE2000 card and the drivers for the card are already included in the operating system.  You may be prompted to put in the Operating system disk for these drivers.
+<p>
+Once the network card has been installed, windows will install some networking support software.  Make sure to have the operating system disk handy in case you need to insert it.
+<p>
+Later we will configure networking software for file sharing and printer sharing.
+<p>
+ISA Card Configuration
+<p>
+If you choose a PCI card, then usually all of the configuration is automatic.  For some ISA cards, you must set the Interrupt (IRQ) and the I/O base address.  Often a special program is provided on the floppy disk to configure the settings on the card.  If you have a card with multiple connections (Twisted Pair, BNC, etc), you may have to configure the proper connector using this software as well.  
+<p>
+If this added complexity is confusing, then it is a good reason to purchase an automatically configured PCI Ethernet card.
+<p>
+Configuring Cards Under NT
+<p>
+Windows NT 4.0 does not automatically detect new hardware.  In Windows NT, once the system is up, you use the Networking Control Panel to install the proper driver.  As part of the driver installation, the card is identified and configured.  If it is an ISA card, you may need to know the IRQ and Base I/O address and enter it as part of the configuration.
+<p>
+Connecting the Network
+<p>
+Once the Ethernet cards have been installed, the next step is to connect the cables between the cards and the hub. This is generally pretty straightforward.  Connect a cable between one of the ports on the Hub and the port on the card installed in each system.  Generally the hub and card both have LED's that light up when the cable is plugged in.  When the LED glows it indicates that the "link" is up.  This means that the cable is properly connected and that the devices on both ends of the cable are powered up.  If you have a link and it does not light once all devices are powered up, then you may have a cabling or hardware problem.  Some hubs and cards also have an activity light which flickers to indicate when data is being transferred.  Switches which are capable of multiple speeds also may have a light to indicate when they are operating at 100Mb/seconds.
+<p>
+The completed connection is shown in the following figure.
+<p>
+<br clear=all>
+<img src=070connectiondiagram.gif align=right alt="Connections">
+<p>
+One thing to be aware of is that some hubs and switches have an "uplink capability".  This is either an additional port on the hub or a small switch associated with one of the ports. 
+<p>
+The purpose of the up link port is to connect the hub to another hub.  Standard ports connect a computer to the hub.  For now, we will not plug any cables into the uplink port.   Later as we construct networks with multiple hubs, we will use the uplink port.
+<br clear=all>
+<p>
+Software Configuration Under Windows-98
+<p>
+<img src=160finalconfigurationpressok.gif align=right alt="Connections">
+For this example, we will configure Windows file and printer sharing.  First we must add the <b>NetBEUI</b> file sharing protocol using the network control panel.  NetBEUI is a very simple file and printer sharing protocol provided by Microsoft.  Files and printers can be shared using TCP/IP or the Novell protocols, but configuring those protocols is more complex.
+<p>
+The control panel should also set the login to be <b>Client for Microsoft Networks</b> so that each system is properly logged in to participate in the network.
+<p>
+When all the setting are complete, close the network control panel dialog by pressing <b>OK</b> which will install some software and reboot the computer.
+<p>
+When you reboot the computer and the login screen is presented, it is important that you press <B>OK</b> or <b>Enter</b>.  If you press <b>Cancel</b> or <b>Escape</b>, the computer will come up with your desktop, but you will not be "logged in" and will not be able to participate in the network.  It is acceptible to leave the password blank in the login screen.
+<p>
+<br clear=all>
+<img src=210identificationworkgroup.gif align=right>
+<p>
+So far, we have done identical steps for each of the computers connected to the network.
+At this point, we must assign unique names to each computer on the network.
+<p>
+To set the identification,  go into the network control panel and set the name, workgroup, and description for each computer.  All the computers on our simple network will belong to the same <b>WorkGroup</b> and each computer will have a unique name within the workgroup.  In this example, <b>Upstairs</b> and <b>Downstairs</b> will be used as the names of the computers in our network.
+<p>
+<br clear=all>
+<img src=240fileandprintsharingchecked.gif align=right>
+<p>
+Now we must turn on file and printer sharing so we press the button <b>File and Print Sharing</b> in the cnetwork control panel. Until we indicate that we may have something to share, our computer will not appear when we browse the network.  We indicate that we will be sharing both files and printers.   Checking the boxes as shown in this figure does not actually permit others to use our resources, it just installs the necessary software so we can configure what and how we will share resources later. 
+<p>
+Once these are checked we exit the network control panel.  More software will be installed, and the system will be rebooted again.
+<p>
+<br clear=all>
+<img src=280browsenetworkneigborhood.gif align=right>
+Once all the configuration is complete, reboot both systems.  To test to see if your configuration has been successful, press on the new <b>Network Neighborhood</b> icon 
+on your desktop.
+<P>
+If you cannot browse the network, re-check all the settings on both computers, re-check the hardware (do you have link-lights on the hub), and reboot the computers.
+<P>
+Other than hardware or connection problems, the most common problem is not logging in properly. Having the wrong type of login configured or pressing <b>Escape</b> at the login screen is a very common problem.
+<P>
+If you cannot browse the network, sometimes you can find a computer directly.  To do this, right-click on <b>Network Neighborhood</b>, select <b>Find Computer</b>, enter the computer name (upstairs) in the field, and press <b>Find</b>.  Sometimes you can communicate with a computer but cannot browse the network.
+<P>
+There is further information in the
+<a href=faq.htm>Frequently Asked Questions</a> supplement for this tutorial.
+<P>
+<br clear=all>
+<IMG SRC=290sharingcdrive.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=269
+ALIGN=RIGHT>
+Before we can access data, we must first give others permission to access the data.  So on the downstairs computer, we navigate to our hard drive, right click, and select <b>Sharing</b>.
+We set the properties of the drive to indicate that the drive is to be shared, and leave the share name as default.  It is possible to create a share name which is not the drive letter, but most people keep the simple default.
+When sharing files, 
+you can indicate the read/write passwords.  When a resource has been shared, we see a small "Sharing hand" added to the icon for the resource.
+<p>
+Printers can be shared in a similar fashion in the printer control panel using a right-click and setting the sharing properties.
+<p>
+<br clear=all>
+<IMG SRC=510clickonc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=306
+ALIGN=RIGHT>
+To access a resource over the network, we log-in and go to network neighborhood.  We double click on the icon for a computer find out what items are available to us on that computer.
+<p>
+In this figure,
+we see two shares, a printer and a disk drive.  To explore a shared disk drive you simply double-click on it it and browse it like a local folder.   If you specified a password when sharing the files, then you will be prompted to enter the password when you try to access the resource.
+<p>
+You can interact with a remote folder using drag and drop, or any way that you would use a local folder.
+<p>
+It is also possible
+to make the remote drive into a "virtual drive" so we don't have to navigate each time through the <b>Network Neighborhood</b> each time.  This is done by right clicking on the share name and select <b>Map Network Drive</b>.
+<p>
+<br clear=all>
+<IMG SRC=570installprinter.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=311
+ALIGN=RIGHT>
+To access the shared printer, while browsing the shares, we right-click on the printer and select <b>Install</b>.  This will walk through the process of installing the printer.  One nice feature is that the necessary drivers to support the printer are installed across the network.

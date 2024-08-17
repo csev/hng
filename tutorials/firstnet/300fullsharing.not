@@ -1,0 +1,4 @@
+<!-- file:300fullsharing-->
+We indicate that the drive is to be shared, and leave the share name as default.  It is possible to create a share name which is not the drive letter, but most people keep the simple default.
+
+You can indicate the read/write passwords.  In this example, we are giving full access with a single password.

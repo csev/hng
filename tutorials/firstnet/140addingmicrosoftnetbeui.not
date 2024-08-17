@@ -1,0 +1,8 @@
+<!-- file:140addingmicrosoftnetbeui-->
+Navigate until the vendor is <b>Microsoft</b> and the protocol is <b>NetBEUI</b>.
+
+NetBEUI is a file and print sharing protocol developed by Microsoft which requires no configuration.  It is a very fast and efficient protocol which is very easy to use for small workgroups.
+
+In business environments, either TCP/IP or Novell protocols may be used for file sharing, but they require more configuration.
+
+Once you press <b>OK</b> be patient, after a few seconds, you will be brought back to the control panel screen.

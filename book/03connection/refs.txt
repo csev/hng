@@ -1,0 +1,11 @@
+http://www.sciam.com/1999/1099issue/1099hawley.html
+http://www.tuketu.com/dsl/xdsl.htm
+http://www.xdsl.com/
+http://www.corecom.com/external/ece/
+http://www.orckit.com/fr_newsa.html?/how_does_ads_works.html
+     The available spectrum ranges from about 20 kHz to 1.104 MHz, while the low 20 KHz 
+     are reserved for voice service (POTS). Noise and channel conditions are constantly 
+     measured for each tone separately, to achieve optimal transmission at any time.
+
+
+

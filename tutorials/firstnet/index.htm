@@ -1,0 +1,514 @@
+<h3>Setting up a Network with Two Windows-98 Computers</h3>
+This case study assumes that you have two computers and would like to
+connect them together to share files and printers.  This is a very simple
+operation, and while this tutorial has a number of steps it can be done
+in less than an hour.
+<P>
+This tutorial does not include the physical installation of the hardware.
+It assumes that you have installed network cards in both computers,
+connected them using two cables and a hub (make sure the hub is plugged in).
+<P>
+This tutorial begins when one of the computers is booted up and detects
+the newly inserted network card.
+<BR CLEAR=ALL><HR>
+<A NAME=010foundnetcard> </a>
+<A HREF=010foundnetcard.htm>
+<IMG SRC=010foundnetcard.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=442
+ALIGN=RIGHT>
+</A>
+<!-- file:010foundnetcard-->
+Windows-98 has detected the card and will search for drivers.  At this point, you can press <b>Cancel</b> to skip this process and continue booting the system.  You can add the drivers later using the control panel or at a later re-boot.
+<P>
+In this example, we will press <b>Next</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020searchdrivers> </a>
+<A HREF=020searchdrivers.htm>
+<IMG SRC=020searchdrivers.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=442
+ALIGN=RIGHT>
+</A>
+<!-- file:020searchdrivers-->
+Generally you will allow Windows to search for the best drivers for the hardware.  You will later have a chance to install drivers from the floppy disk.
+<P>
+If you choose the second option, you will select the hardware from a list.  You will also have a chance to install your drivers from a disk using the second option.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030searchfloppy> </a>
+<A HREF=030searchfloppy.htm>
+<IMG SRC=030searchfloppy.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=442
+ALIGN=RIGHT>
+</A>
+<!-- file:030searchfloppy-->
+We have our driver on a floppy disk, so we check the floppy-disk option.
+<P>
+Sometimes a driver is located in a subdirectory on the floppy (or CD-ROM) so you must use the <b>Browse</b> option to select the proper subdirectory.  Often directories are of the form <b>A:\WIN98\</b> or <b>A:\DRIVERS\WIN98\</b>.  Most vendors provide floppies or CD-ROM directory structures which can automatically be read by Windows.
+<P>
+Sometimes it is helpful to look through the media on another system to get a sense of the directory structure.  You are looking for files that look like <b>LNE100TX.INF</b>.  These INF files contain the information indicating which files must be installed for which pieces of hardware.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040founddriver> </a>
+<A HREF=040founddriver.htm>
+<IMG SRC=040founddriver.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=442
+ALIGN=RIGHT>
+</A>
+<!-- file:040founddriver-->
+This floppy has the <B>INF</b> file in the root directory so it is automatically found.
+<P>
+If no driver is found, press the <b>Back</b> button and try again.  Ultimately you may have to press <b>Cancel</b> if you simply cannot find the driver.
+<P>
+In some cases, Windows may find a built-in driver for a card.  Some older cards have drivers included in the Windows-98 distribution media.  Also some newer cards are designed to emulate older cards such as the <b>NE2000</b> card.  If the card did not come with a driver disk at all, it is likely that it emulates some card that Windows-98 already supports.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050insertcd> </a>
+<A HREF=050insertcd.htm>
+<IMG SRC=050insertcd.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=402
+ALIGN=RIGHT>
+</A>
+<!-- file:050insertcd-->
+In addition to the drivers for the card, Windows-98 notices that this is the first network card installed on the system and must install certain networking components to support the card.  This includes the TCP/IP software.
+<P>
+So you must insert the Windows-98 CD and press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060copyingnetfiles> </a>
+<A HREF=060copyingnetfiles.htm>
+<IMG SRC=060copyingnetfiles.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=319
+ALIGN=RIGHT>
+</A>
+<!-- file:060copyingnetfiles-->
+Copying the files.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070switchbacktoadrive> </a>
+<A HREF=070switchbacktoadrive.htm>
+<IMG SRC=070switchbacktoadrive.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=382
+ALIGN=RIGHT>
+</A>
+<!-- file:070switchbacktoadrive-->
+During the copy process, the installer may get confused and raise dialogs.  In this case, after copying some files from the Windows-98 CD-ROM, it is looking for the original driver from the floppy and cannot find it.  Simply re-select the <b>A:\</b> path from the drop down box.
+<P>
+This type of dialog may come up several times as the installer must switch media.  Simply read the directions and help the installer find the media.  If you make a mistake and select the wrong media, it will tell you and give you another chance.  If it is looking for something and you cannot help it find it, you may have to press <b>Cancel</b>.
+<P>
+Sometimes you can find some components in <b>C:\WINDOWS\SYSTEM\</b> or <b>C:\WINDOWS\OPTIONS\CABS\</b> - this is especially true if you are reinstalling something and the files have already been installed once.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080alldonepressfinish> </a>
+<A HREF=080alldonepressfinish.htm>
+<IMG SRC=080alldonepressfinish.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=442
+ALIGN=RIGHT>
+</A>
+<!-- file:080alldonepressfinish-->
+This is a good indication.  With your help, Windows has found all of the necessary drivers.
+<P>
+Press <b>Finish</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=090restartyes> </a>
+<A HREF=090restartyes.htm>
+<IMG SRC=090restartyes.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=364
+ALIGN=RIGHT>
+</A>
+<!-- file:090restartyes-->
+The first of several necessary restarts.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=110networkproperties> </a>
+<A HREF=110networkproperties.htm>
+<IMG SRC=110networkproperties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:110networkproperties-->
+Once the system is back up and we have logged in properly, we go to
+<b> Start | Settings | Control Panel | Network</b> and see  this screen.
+<P>
+A number of components have been installed.  We see our new adapter and the TCP/IP protocol.  The TCP/IP protocol has been "bound" to both the dial-up adapter and our new network card.
+<P>
+This configuration would make the most sense in a business environment when this computer is connected to a LAN which is already connected to the Internet.
+<P>
+You can explore these components by highlighting them and clicking <b>Properties</b> for each.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=120removetcpiplan> </a>
+<A HREF=120removetcpiplan.htm>
+<IMG SRC=120removetcpiplan.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:120removetcpiplan-->
+Because we are going to be operating in a home network environment and only do file and print sharing, we are going to remove the TCP/IP protocol bound to the Network adapter.
+<P>
+In a more complex setup, we would leave this binding.  If we want it back, we can
+always add it later.
+<P>
+So we select it and press <b>Remove</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=130pressedaddprotocol> </a>
+<A HREF=130pressedaddprotocol.htm>
+<IMG SRC=130pressedaddprotocol.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=396
+ALIGN=RIGHT>
+</A>
+<!-- file:130pressedaddprotocol-->
+Next we must add a protocol for file and print sharing.  On the Network control panel we press <b>Add</b> and this screen comes up.
+<P>
+We select <b>Protocol</b> and press </b>Add</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=140addingmicrosoftnetbeui> </a>
+<A HREF=140addingmicrosoftnetbeui.htm>
+<IMG SRC=140addingmicrosoftnetbeui.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=442
+ALIGN=RIGHT>
+</A>
+<!-- file:140addingmicrosoftnetbeui-->
+Navigate until the vendor is <b>Microsoft</b> and the protocol is <b>NetBEUI</b>.
+<P>
+NetBEUI is a file and print sharing protocol developed by Microsoft which requires no configuration.  It is a very fast and efficient protocol which is very easy to use for small workgroups.
+<P>
+In business environments, either TCP/IP or Novell protocols may be used for file sharing, but they require more configuration.
+<P>
+Once you press <b>OK</b> be patient, after a few seconds, you will be brought back to the control panel screen.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=150removenetbeuidialup> </a>
+<A HREF=150removenetbeuidialup.htm>
+<IMG SRC=150removenetbeuidialup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:150removenetbeuidialup-->
+It has automatically added NetBEUI to our dialup adapter.  There is no reason to have this, so we remove it.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=160finalconfigurationpressok> </a>
+<A HREF=160finalconfigurationpressok.htm>
+<IMG SRC=160finalconfigurationpressok.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:160finalconfigurationpressok-->
+This is our final configuration of network protocols.
+<P>
+Make sure the login is set to <b>Client for Microsoft Networks</b> - unless this is set, the system will not be able to participate on the network.
+<P>
+When this is all set, press <b>OK</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=170insertcdrom> </a>
+<A HREF=170insertcdrom.htm>
+<IMG SRC=170insertcdrom.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=352
+ALIGN=RIGHT>
+</A>
+<!-- file:170insertcdrom-->
+Again, our new configuration will need some more Windows-98 files installed.
+<P>
+The files will be installed and the system will reboot.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=180loginscreen> </a>
+<A HREF=180loginscreen.htm>
+<IMG SRC=180loginscreen.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=462
+ALIGN=RIGHT>
+</A>
+When the computer reboots, you will be presented with a login screen.
+<P>
+There are two different screens used for log-in.  A "Windows" login (smaller screen with a windows logo) and a "Network" login.   You need to see the network login.  If you don't,
+go to the <b>Network Control Panel</b> and make <B>Client for Microsoft Networks</b> the default login.
+<P>
+Also make sure to press <b>OK</b> or <b>Enter</b> at this screen - not <b>Escape</b>.  If you press <b>Escape</b>, you will not be logged in and file/print sharing will not work.
+<P>
+If you feel brave and want to alter the log-in process, see the
+<a href=faq.htm>Frequently Asked Questions</a> for this tutorial.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=200rightclickproperties> </a>
+<A HREF=200rightclickproperties.htm>
+<IMG SRC=200rightclickproperties.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=247
+ALIGN=RIGHT>
+</A>
+<!-- file:200rightclickproperties-->
+A quick way to get the Network Properties is to right-click on <b>Network Neighborhood</b> and select <b>Properties</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=210identificationworkgroup> </a>
+<A HREF=210identificationworkgroup.htm>
+<IMG SRC=210identificationworkgroup.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:210identificationworkgroup-->
+Back in the network properties, we select <b>Identification</b>.  We must select a network name for the computer, select the workgroup shared by all of the computers, and put in an optional description.
+<P>
+Computer names must be unique within the workgroup.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=220accessleavealone> </a>
+<A HREF=220accessleavealone.htm>
+<IMG SRC=220accessleavealone.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:220accessleavealone-->
+Under access control, we leave the default set to <b>Share-level control</b>.
+<P>
+this allows you to set passwords based on what is being shared (disk or printer) rather than on some user or group structure.  The second option is typically used in a business environment running an NT Domain.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=230configurationpresssharing> </a>
+<A HREF=230configurationpresssharing.htm>
+<IMG SRC=230configurationpresssharing.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:230configurationpresssharing-->
+Now we must turn on file and printer sharing so we press the button
+<b>File and Print Sharing</b>.  Until we indicate that we have something to share, our computer will not appear when we browse the network.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=240fileandprintsharingchecked> </a>
+<A HREF=240fileandprintsharingchecked.htm>
+<IMG SRC=240fileandprintsharingchecked.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=337
+ALIGN=RIGHT>
+</A>
+<!-- file:240fileandprintsharingchecked-->
+We indicate that we will be sharing both files and printers.
+<P>
+This does not actually permit others to use our resources, it just installs the necessary software so we can configure what and how we will share resources later.
+<P>
+Once these are checked press <b>OK</b> and press <b>OK</b> again in the network control panel.  You will be prompted for the CD-ROM and the system will be rebooted again.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=270othersystemnameconfiguration> </a>
+<A HREF=270othersystemnameconfiguration.htm>
+<IMG SRC=270othersystemnameconfiguration.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:270othersystemnameconfiguration-->
+Now you will go through the exact same setup on the second system you have connected to the network.
+<P>
+Everything is identical to the first system except the computer name in the <b>Identification</b> section.
+<P>
+Once everything is set, you might want to reboot the both computers one more time.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=280browsenetworkneigborhood> </a>
+<A HREF=280browsenetworkneigborhood.htm>
+<IMG SRC=280browsenetworkneigborhood.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=347
+ALIGN=RIGHT>
+</A>
+<!-- file:280browsenetworkneigborhood-->
+Now is the moment of truth.  On either computer (in this example I will use the downstairs computer).  Double click on <b>Network Neighborhood</b>.  If all goes well, you will see both computers.
+<P>
+If you cannot browse the network, re-check all the settings on both computers, re-check the hardware (do you have link-lights on the hub), and reboot the computers.
+<P>
+Other than hardware or connection problems, the most common problem is not logging in properly. Having the wrong type of login configured or pressing <b>Escape</b> at the login screen is a very common problem.
+<P>
+If you cannot browse the network, sometimes you can find a computer directly.  To do this, right-click on <b>Network Neighborhood</b>, select <b>Find Computer</b>, enter the computer name (upstairs) in the field, and press <b>Find</b>.  Sometimes you can communicate with a computer but cannot browse the network.
+<P>
+There is further information in the
+<a href=faq.htm>Frequently Asked Questions</a> supplement for this tutorial.
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=290sharingcdrive> </a>
+<A HREF=290sharingcdrive.htm>
+<IMG SRC=290sharingcdrive.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=269
+ALIGN=RIGHT>
+</A>
+<!-- file:290sharingcdrive-->
+Before we can access data, we must first give others permission to access the data.  So on the downstairs computer, we navigate to our hard drive, right click, and select <b>Sharing</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=300fullsharing> </a>
+<A HREF=300fullsharing.htm>
+<IMG SRC=300fullsharing.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:300fullsharing-->
+We indicate that the drive is to be shared, and leave the share name as default.  It is possible to create a share name which is not the drive letter, but most people keep the simple default.
+<P>
+You can indicate the read/write passwords.  In this example, we are giving full access with a single password.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=310cisnowshared> </a>
+<A HREF=310cisnowshared.htm>
+<IMG SRC=310cisnowshared.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=270
+ALIGN=RIGHT>
+</A>
+<!-- file:310cisnowshared-->
+The little hand icon indicates that the C drive is now shared.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=320sharingtheprinter> </a>
+<A HREF=320sharingtheprinter.htm>
+<IMG SRC=320sharingtheprinter.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=284
+ALIGN=RIGHT>
+</A>
+<!-- file:320sharingtheprinter-->
+We indicate that the downstairs printer is shared using the same right-click mechanism.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=330sharedwithoutpassword> </a>
+<A HREF=330sharedwithoutpassword.htm>
+<IMG SRC=330sharedwithoutpassword.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=368
+ALIGN=RIGHT>
+</A>
+<!-- file:330sharedwithoutpassword-->
+Under the <b>Sharing</b> tab, we accept the default share name and do not put a password on the printer.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=340printerisnowshared> </a>
+<A HREF=340printerisnowshared.htm>
+<IMG SRC=340printerisnowshared.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=270
+ALIGN=RIGHT>
+</A>
+<!-- file:340printerisnowshared-->
+The "Sharing Hand" indicates that the printer is now shared.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=500networkneighborhood> </a>
+<A HREF=500networkneighborhood.htm>
+<IMG SRC=500networkneighborhood.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=306
+ALIGN=RIGHT>
+</A>
+<!-- file:500networkneighborhood-->
+Moving to the upstairs computer, we log-in and go to network neighborhood.  We double click on the downstairs computer to find out what items are available to us on that computer.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=510clickonc> </a>
+<A HREF=510clickonc.htm>
+<IMG SRC=510clickonc.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=306
+ALIGN=RIGHT>
+</A>
+<!-- file:510clickonc-->
+We see two shares, a printer and a disk drive.  First we will explore the disk drive so we double-click it.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=520entersharepassword> </a>
+<A HREF=520entersharepassword.htm>
+<IMG SRC=520entersharepassword.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=421
+ALIGN=RIGHT>
+</A>
+<!-- file:520entersharepassword-->
+We assigned a password to this share, so we must enter it here.  The upstairs system can store this password for later use.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=530browsefiles> </a>
+<A HREF=530browsefiles.htm>
+<IMG SRC=530browsefiles.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=311
+ALIGN=RIGHT>
+</A>
+<!-- file:530browsefiles-->
+Since we have the right password, we are now browsing the downstairs computer's C: drive over the network.  You can interact with this drive using drag and drop, or any way that you would use a local folder.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=540mapnetworkdrive> </a>
+<A HREF=540mapnetworkdrive.htm>
+<IMG SRC=540mapnetworkdrive.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=310
+ALIGN=RIGHT>
+</A>
+<!-- file:540mapnetworkdrive-->
+Sometimes it is more convenienent to make the remote drive into a "virtual drive" so we don't have to navigate each time through the <b>Network Neighborhood</b> each time.  To do this, we right click on the share name and select <b>Map Network Drive</b>.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=550whichdrivetomap> </a>
+<A HREF=550whichdrivetomap.htm>
+<IMG SRC=550whichdrivetomap.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=394
+ALIGN=RIGHT>
+</A>
+<!-- file:550whichdrivetomap-->
+We pick the drive to letter to map, and indicate that we want this drive mapped at every log-in and press <b>OK</b>.
+<P>
+You may have to enter a password, but since we already have entered the password for the drive once, it is mounted without a password.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=560newedrive> </a>
+<A HREF=560newedrive.htm>
+<IMG SRC=560newedrive.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=356
+ALIGN=RIGHT>
+</A>
+<!-- file:560newedrive-->
+Looking at <b>My Computer</b> we see the new "virtual" <b>E:</b> drive.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=570installprinter> </a>
+<A HREF=570installprinter.htm>
+<IMG SRC=570installprinter.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=311
+ALIGN=RIGHT>
+</A>
+<!-- file:570installprinter-->
+To access the shared printer, while browsing the shares, we right-click on the printer and select <b>Install</b>.  This will walk through the process of installing the printer.  One nice feature is that the necessary drivers to support the printer are installed across the network.
+<BR CLEAR=ALL>
+In this case tutorial, we have walked through the configuration of two computers on a network and setup sharing for files and a printer.
+<P>
+For a typical PC user, this is not much more complicated than installing a modem.  There are a few settings which may not be immediately obvious but this tutorial should show those settings.
+<!-- Copyright 2000, Computer Resource Services -->

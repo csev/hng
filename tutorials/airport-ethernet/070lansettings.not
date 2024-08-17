@@ -1,0 +1,7 @@
+This configures the network in which the wireless devices will operate.  As shown in this configuration, there will only be two computers in this network and they will have fixed IP addresses - in this configuration, the Airport or operating as a "rather transparent" gateway between the wireless space and the rest of the home network.
+<p>
+Sometimes DHCP and NAT does not work really well for protocols such as Microsoft File and print sharing so fixed addresses are better - however fixed addresses reduce flexibility and increase configuration effort.
+<p>
+A more common configutation choice here would be the <b>DHCP/NAT</b> option.
+
+

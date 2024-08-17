@@ -1,0 +1,12 @@
+<h3>Setting up a Network with Two Windows-98 Computers</h3>
+This case study assumes that you have two computers and would like to 
+connect them together to share files and printers.  This is a very simple
+operation, and while this tutorial has a number of steps it can be done
+in less than an hour.
+
+This tutorial does not include the physical installation of the hardware.
+It assumes that you have installed network cards in both computers,
+connected them using two cables and a hub (make sure the hub is plugged in).
+
+This tutorial begins when one of the computers is booted up and detects 
+the newly inserted network card.

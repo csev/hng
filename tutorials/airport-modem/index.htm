@@ -1,0 +1,112 @@
+<BR CLEAR=ALL><HR>
+<A NAME=010launchadmin> </a>
+<A HREF=010launchadmin.htm>
+<IMG SRC=010launchadmin.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=240
+ALIGN=RIGHT>
+</A>
+This section describes how one would configure an Apple Airport base station when the Airport is going to act as a gateway for the entire home with an analog modem connection.
+<p>
+To see how to set this up for a cable or DSL modem see the section on <a href=../airport-ethernet/index.htm>Airport Ethernet Configuration</a>.
+<p>
+The first step is to select the <B>Airport Utility</b>
+<P>
+<P>
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=020lookingforbase> </a>
+<A HREF=020lookingforbase.htm>
+<IMG SRC=020lookingforbase.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=345
+ALIGN=RIGHT>
+</A>
+Hopefully your system will find the base station.  If you cannot find the base station, check the Airport documentation on how to perform complete hardware resets.
+<P>
+If you cannot find the base station after a complete reset, recheck the installation in your computer and the software in your computer.
+<P>
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=030selectandconfigure> </a>
+<A HREF=030selectandconfigure.htm>
+<IMG SRC=030selectandconfigure.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=451
+ALIGN=RIGHT>
+</A>
+In a simple case, you will find a single base station - select the base station to configure it.
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=040enterpassword> </a>
+<A HREF=040enterpassword.htm>
+<IMG SRC=040enterpassword.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=413
+ALIGN=RIGHT>
+</A>
+Base stations have a password - this keeps your neighbors from using the system and setting your parameters.
+<P>
+If you forget the password follow the hardware reset procedure in the Airport documentation.
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=050wirelesssettings> </a>
+<A HREF=050wirelesssettings.htm>
+<IMG SRC=050wirelesssettings.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This screen sets the identity of your wireless base station.  The <b>Severance_Home</b> network name will be used to distinguish among different Airport wireless networks.
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=060internetsettings> </a>
+<A HREF=060internetsettings.htm>
+<IMG SRC=060internetsettings.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This screen is where the configuration steps differ between the analog modem configuration and the  cable modem/DSL configuration.
+<p>
+First we indicate that the connection will be done using the <b>Modem</b>.  All the IP address information disappears and the phone number PPP ID and PPP password are displayed instead.
+<p>
+As with most PPP setups you want to leave all the IP address router address and DNS address information blank and allow them to be supplied by the server.  In this example the Airport is connected so the values assigned by the server are shown.
+<P>
+<P>
+<P>
+<P>
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=070lansettings> </a>
+<A HREF=070lansettings.htm>
+<IMG SRC=070lansettings.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+This configures the network in which the wireless devices will operate.  Because this device is going to operate as the complete gateway for the home (both Ethernet and wireless), we will configure it to use Network Address Translation (NAT).
+<p>
+We also check the <b>provide IP addresses on Ethernet,/b> so the Airport will distribute DHCP addresses to the LAN attached computers.
+<BR CLEAR=ALL>
+<BR CLEAR=ALL><HR>
+<A NAME=080accesscontrol> </a>
+<A HREF=080accesscontrol.htm>
+<IMG SRC=080accesscontrol.gif BORDER=0 
+ ALT='Click Here for a large version of the image' 
+WIDTH=400
+ALIGN=RIGHT>
+</A>
+If you are in an area where other wireless equipment (802.11 compatible) , a simple approach to security is to exhaustively list the hardware addresses of the Airport adapters that this base station will service.  You can find this information on the control panel of the computer with the wireless card installed.
+<BR CLEAR=ALL>
+<!-- Copyright 2000, Computer Resource Services -->

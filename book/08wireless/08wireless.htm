@@ -1,0 +1,95 @@
+<h3>Wireless Networking</h3>
+
+There is absolutely no doubt - wireless networking is cool.  Wireless networking frees you from the basement or the out-of-the-way home office.  With a portable computer and wireless network card, you can site and watch a television program while answering the E-mail in your overflowing inbox.  In reality, neither takes 100% of your concentration so doing both at the same time is a good use of time.
+<p>
+It was not that long ago that wireless networking was expensive and exotic.  You needed fancy antennas on towers, which had to be carefully aimed.  Today, you go down to the local electronics store, purchase a kit and in several hours you can be running a fast and reliable wireless network.
+
+<h3>Deploying Wireless Networking</h3>
+
+For consumer wireless networking, the most typical approach is to chaoose wireless cards which conform to the IEEE 802.11 standard.  Whlie there are several variants of the 802.11 standard, by far the most common is the Direct Sequence Spread Spectrum (DSSS) variant, operating at 1Mbs, 2Mbs, or 11Mbs.  Later in this chapter, we will look into wireless technologies other than the DSSS approach.
+<p>
+There are two ways to deploy a wireless network in your home:
+<ul>
+<li>
+A standalone network consisting only of workstations (called an Ad. Hoc. network)
+<li>
+A network with one or more <b>access points</b> (also called base stations) and workstations
+</ul>
+<img src=010accesspoint.gif align=right>
+The typical base station operates as a gateway between a wired Ethernet and the wireless network.  Because the IEEE 802.11 is based on Ethernet (also known as IEEE 802.3), it is possible for the base station to transparently bridge packets between the Ethernet and wireless portions of the network.  Some base stations are also capable of running a complete <b>Network Address Translation</b> (NAT) engine providing and mapping dynamic addresses for the wireless workstations and allowing the wireless network to share a single IP address on the wired network.  As with any NAT implpementation, most standard Internet applications (such as web browsing) work fine while printer and file sharing can be problematic at times.
+<br clear=all>
+<p>
+<center>
+<img src=060airportinternet.gif>
+</center>
+This example shows the configuration screen from an Apple Airport Base Station.  The above screen shows how the wireless portion of the network will operate.  Because we want file and printer sharing between the wireless and Ethernet network, we use DHCP to distribute addresses without using network address translation (NAT).  As configured, only two wireless computers can be active at the same time.
+<p>
+The Apple Airport was one of the first affordable wireless base stations for the consumer market. The Airport was cabable of acting as both a home gateway (with a built-in modem) as well as the Ethernet to wireless network gateway.
+<p>
+<center>
+<img src=040airportsetting.gif>
+</center>
+<p>
+<img src=020allyourbase.gif align=right>
+In this screen, we are configuring how the gateway connects to the rest of the network.  Because this home already has a home Internet gateway (192.168.1.1) which is running NAT and DHCP for the home, we simply point the Airport at that gateway for Internet connectivity.  These values are very important because they are used as part of the values configured for the wireless workstations via DHCP.  The wireless workstations need to know the DNS, gateway, and network mask values for the rest of the network.
+<br clear=all>
+
+<h3Security in Wireless Networks</h3>
+
+Wireless networks based on the IEEE 802.11 stndard have several options for security.  Obviously, you do not want to put up a wireless network and have your neighbor able to share your printers and network connections.
+<p>
+There are several mechanisms for security in these networks:
+<ul>
+Each network is configured to have a unique identifier (Severance_Home in the above example) so that it is possible for multiple access points and multiple wireless networks to operate in the same area independently.  Client computers can disover and associate with the desired wireless network.
+<li>
+Each network can have a password.  However, the 802.11 standard did not specify how passwords were to work, so each vendor developed their own password mechanism.  With the password capability enabled, you may find that you have to stick with a single vendor's wireless networking equipment.
+<li>
+The packets can also be encrypted so that it is not possible for an evesdropper to "sniff" the network traffic and find the contents of the packets.  There are differing levels of encryption, with a 56-bit encryption and a 128-bit encryption key.  While the 128-bit keys are much harder to crack than the 56-bit keys, for home use either should be sufficient.  
+<li>
+Some base stations can be configured so that they will only talk to certain wireless cards.  Each wireless network card (like Ethernet) has a unique 48-bit serial number installed by the manufacturer.  As the owner of the base station, you can simply enter the serial numbers of the wireless NICs that you are willing to support.  In some ways, this approach is better than a password because it is vendor neutral.  But not all base stations support this facility.
+</ul>
+<center>
+<img src=050airportnetwork.gif>
+</center>
+<p>
+In this configuration screen for the Apple Airport Base Station, the wireless portion of the sample network is configured <b>not</b> to use the password and encryption so as to maximize the interoperability with different vendor's equipment.
+
+<h3>Running an Ad Hoc Network</h3>
+<img src=070adhoc.gif align=right>
+So far, we have covered the layout of a wireless network using an access point.  It is possible to have a network without an access point.  This is called an Ad. Hoc. network.  In this type of network, the wireless cards work together to essentially operate so the computers "appear" to be connected using an Ethernet hub.  Files and printers can be shared, but additional work must be done if you want to share an Internet connection.
+<p>
+While the majority of the wireless network cards are built for portable computers, it is also possible to use wireless networking to connect a desktop computer to the network.  In most cases using wireless with a desktop computer, the you install a vendor-provided adapter which allows a PCMCIA adapter to be installed into a desktop computer and then you use a standard PCMCIA wireless card.  A few vendors have a separate wireless network adapter for the desktop computer, but it is the exception.
+<br clear=all>
+<p>
+<img src=080adhocinternet.gif align=right>
+If you want to share an Internet connection in an ad hoc. wireless network, you must perform the network gateway function in one of the computers which has both a wireless connection and a connection to the Internet.  This workstation must be powered on and run Internet connection sharing software such as Sygate, WinRoute, or others.  While this configuration can work well, most people find it well worth the cost of purchasing a low-cost hardware access-point instead of using a workstation as a gateway.
+<br clear=all>
+
+<h3>Wireless Networking Technology - An Overivew</h3>
+
+There are two basic sources of wireless networking technology available in the market today.  The earliest commercial wireless network technology grew out of specialized commercial applications such as inventory control in a large department store or warehouse.  Employees would walk around with a wireless wand with a bar code reader effortlessly uploading instantaneous inventory information.  These wireless technologies typically used unregulated frequency ranges used by wireless telephones (900Mhz).
+<p>
+Because the data rates for the typical application did not need to be very high, relatively simple protocols were developed and used.  Most of the engineering focus was on keeping the power requirements very low for small battery-powered hand-held units.
+<p>
+The more recent source of wireless network technology came from military research which was converted to civilian purposes.  Wireless data connections in military applications had several goals: (1) relatively high data rates, (2) reliability in the face of enemy attempts to jam signals, (3) the transmissions should be difficult to monitor, and (4) it should be difficult even to detect that a trasmission is occuring.
+<p>
+These requirements lead to a set of technolgies called "spread spectrum" communications which operate at 2.4Ghz and 5Ghz.  Instead of picking particular frequency range and using high power levels to send as much data as possible using that frequency, the spread spectrum approach takes a much wider frequency band and sends the data using many different frequencies at relatively low power.  Further, based on agreement between the sender and receiver, the frequencies can be changed several times per second in what would appear to be a random pattern.   The two most common approaches were called <b>Frequency Hopping</b> and <b>Direct Sequence</b>.
+<p>
+<img src=090fhss.gif align=right>
+In Frequency Hopping Spread Spectrum (FHSS), the bandwidth is divided into channels (the 2.4Ghz range is divided into 79 channels in the US).  Once a wireless connection is established, the receiver and transmitter agree on one of several frequency hopping patterns. Based on the current channel and a simple mathematical calaulation, both the receiver and transmitter jump to the next channel in the sequence at the same time.  Unless you know the proper calculation to make, an evesedropper would have a difficult time following the communication.
+<p>
+While the original goal of changing frequencies was to evade detection (the military obviously used far more than 79 channels), having multiple sequences means that interference among different groups of receivers and transmitters is reduced.  As a mater of fact, it is possible to deploy a number of base stations with overlapping coverage ares, and have a wireless network card associate itself with the base station with the strongest signal.  In this way, a network of base stations operate much like a cellular telephone network, handing mobile base stations off from one to the other.
+<br clear=all>
+<p>
+<img src=100dsss.gif align=right>
+In Direct Sequence Spread Spectrum (DSSS) the frequency range is divided into fewer channels.  Instead of transmisttion at high power and moving quickly from one channel to another, the data is "spread out" oin a predefined pattern with a power level so low that the signal appears to be background noise.  The only way to reconstruct the data was to know the subtle patterns in the background noise.  To make a simple analogy, it is like hearing an AM radio station which is too far away.  It all sounds like static, but there is enough of a pattern to the static that you know that people are talking but you cannot discern what they are saying.  In DSS, the circuitry in the network cards knows the exact pattern in the "static" and reconstructs the data. Again, a feature that was originally designed to evade detection results in a wireless network technology that is tolerant of interference from other sources such as a wireless phone, microwave oven, or unlicensed equipment operating in the same frequency range.
+<p>
+In the late 1990's, there was a great deal of debate as to which of the technologies was superior with excellent arguments for all of the technologies.   But the debate was resolved (for now) as low-cost equipment from Lucent and Apple came out using IEEE 802.11 DSSS technology.  In order to be compatible with the existing (and growing) installed user base, nearly all new wireless networking products came out supporting the DSSS technology.
+<br clear=all>
+<p>
+Another factor which caused DSSS to be more broadly accepted was the throughput. Originally, both DSSS and FHSS operated at 1Mbps.  Many people felt that the minimum acceptible bandwidth was 10Mbps (as fast as Ethernet).  It turned out that it was easier to push DSSS technology to 11Mbps than the FHSS technology because of the way the FCC set the rules for the use of the 2.4Ghz unlicensed frequency range.  The FHSS community pushed to have the FCC rules relaxed to boost the performance of FHSS, but by the time it was resolved DSSS had a strong foothold in the consumer market.
+<p>
+The FHSS approach still has a distinct advantage when there is a high density of access points and mobile workstations.  Even though the speed of an individual FHSS connection is slower, if there are many simultaneous connections, FHSS will make better overall use of the frequency.
+
+<h3>Conclusion</h3>
+Wireless networking is the ultimate expression of home networking.  It frees you from your "computer dungeon" and allows you to be productive in more pleasant surroundings.  The market for wireless equipment has settles down and a wide range of interopreable products exist based on the IEEE 802.11 Direct Sequence Spread Spectrum (DSS) technology.  You can easily purchase a kit with several network cards and an access point and build a nice wireless network as an add-on to your existing network.
